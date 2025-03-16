@@ -38,7 +38,7 @@ export const App = () => {
       <table className="table">
         <tbody>
           {goods.map(good => (
-            <tr key={good} data-cy="Good" className={good === selectedGoods ? 'has-background-success-light' : ''}>
+            <tr key={good} className={good === selectedGoods ? 'has-background-success-light' : ''}>
               <td>
                 {good === selectedGoods ? (
                   <button
@@ -60,7 +60,6 @@ export const App = () => {
                   </button>
                 )}
               </td>
-
               <td data-cy="GoodTitle" className="is-vcentered">
                 {good}
               </td>
@@ -71,3 +70,4 @@ export const App = () => {
     </main>
   );
 };
+
